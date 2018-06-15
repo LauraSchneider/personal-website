@@ -3,8 +3,6 @@
     src: url('./intro_pics/FortyScript.ttf') format('truetype');
 }
 
-
-
 #header, #footer {
     position: fixed;
     height: 50px;
