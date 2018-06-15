@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'FortyScript';
+    src: url('./intro_pics/FortyScript.ttf') format('truetype');
+}
+
+
+
 #header, #footer {
     position: fixed;
     height: 50px;
@@ -12,4 +19,37 @@
 
 #footer {
     bottom: 0px;
+}
+
+/* ABOUT US SECTION */
+.intro-us-container {
+    text-align: center;
+    border: 1px solid red;
+}
+
+#loretta {
+    font-family: 'FortyScript';
+    font-size: 80px;
+    color: rgb(103, 37, 187);
+}
+
+.red-arrow {
+    height: 200px;
+    margin-left: 200px;
+}
+
+.us-pic {
+    height: 500px;
+    border-radius: 50%;
+}
+
+.intro-text-container {
+    /* width: 1000px; */
+    border: 1px solid blue;
+}
+
+.intro-text {
+    font-family: fantasy;
+    font-size: 20px;
+    text-align: center;
 }
