@@ -1,6 +1,16 @@
 /* TECH STACK */
 
-.tech_icons {
-    width: 200px;
-    height: 400px;
+#tech-stack {
+    margin-top: 100px;
+    border: 1px solid blue;
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+.tech-icons {
+    width: 100px;
+    /* height: 100px; */
+}
+
+#heroku {
+    width: 90px;
 }
