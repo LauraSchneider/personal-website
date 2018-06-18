@@ -1,19 +1,45 @@
 * {
     margin: 0;
-
 }
 
 body {
-    background-color: #f3f3f3;
+    background-color: white;
 }
 
 /* ABOUT US SECTION */
+.fp-tableCell {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* border: 3px solid green; */
+}
+
+.names {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 100px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear; 
+
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
 .intro-us-container {
     text-align: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 100px;
 }
 
 .us-pic {
@@ -22,22 +48,30 @@ body {
 }
 
 .intro-text-container {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    width: 800px;
+    margin: 0 auto;
 }
 
 .intro-text {
-    font-family: fantasy;
-    font-size: 20px;
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
     text-align: center;
 }
 
+#sign-off {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 40px;
+    margin-top: 30px;
+}
 .graffiti {
     height: 168px;
     width: 462px;
 }
 
-/* FOOTER AND HEADER SECTION */
-#header, #footer {
+
+/* HEADER SECTION */
+#header {
     position: fixed;
     height: 50px;
     display: block;
@@ -45,7 +79,6 @@ body {
     background-color: black;
     z-index: 9;
     text-align: center;
-    /* color: #f2f2f2; */
     padding: 20px 0 0 0;
 }
 
@@ -64,14 +97,11 @@ nav li {
 }
 
 nav li a {
+    text-transform: uppercase;
     display: block;
-    font-size: 20px;
-    padding: 14px 16px;
+    font-size: 25px;
+    /* padding: 14px 16px; */
     text-decoration: none;
-    color: #54f309;
-    font-family: fantasy;
-}
-
-#footer {
-    bottom: 0px;
+    color: white;
+    font-family: 'Abel', sans-serif;
 }
