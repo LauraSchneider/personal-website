@@ -1,39 +1,19 @@
-@font-face {
-    font-family: 'FortyScript';
-    src: url('./intro_pics/FortyScript.ttf') format('truetype');
+* {
+    margin: 0;
+
 }
 
-#header, #footer {
-    position: fixed;
-    height: 50px;
-    display: block;
-    width: 100%;
-    background: #333;
-    z-index: 9;
-    text-align: center;
-    color: #f2f2f2;
-    padding: 20px 0 0 0;
-}
-
-#footer {
-    bottom: 0px;
+body {
+    background-color: #f3f3f3;
 }
 
 /* ABOUT US SECTION */
 .intro-us-container {
     text-align: center;
     border: 1px solid red;
-}
-
-#loretta {
-    font-family: 'FortyScript';
-    font-size: 80px;
-    color: rgb(103, 37, 187);
-}
-
-.red-arrow {
-    height: 200px;
-    margin-left: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .us-pic {
@@ -42,7 +22,6 @@
 }
 
 .intro-text-container {
-    /* width: 1000px; */
     border: 1px solid blue;
 }
 
@@ -50,4 +29,49 @@
     font-family: fantasy;
     font-size: 20px;
     text-align: center;
+}
+
+.graffiti {
+    height: 168px;
+    width: 462px;
+}
+
+/* FOOTER AND HEADER SECTION */
+#header, #footer {
+    position: fixed;
+    height: 50px;
+    display: block;
+    width: 100%;
+    background-color: black;
+    z-index: 9;
+    text-align: center;
+    /* color: #f2f2f2; */
+    padding: 20px 0 0 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    font-size: 20px;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #54f309;
+    font-family: fantasy;
+}
+
+#footer {
+    bottom: 0px;
 }
