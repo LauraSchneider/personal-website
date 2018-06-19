@@ -1,7 +1,6 @@
 /* TECH STACK */
 
-#tech-stack {
-    border: 5px solid cyan;
+.tech-stack {
     padding-top: 100px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -14,10 +13,13 @@
     padding-bottom: 25px;
 }
 
-#heroku {
+.heroku {
     width: 75px;
 }
 
-.loretta-projects {
-    border: 1px red solid;
+/* LORETTA'S PROJECTS */
+
+#loretta-projects {
+    border: 3px solid green;
+    padding-top: 200px;
 }
