@@ -7,23 +7,16 @@ body {
 }
 
 /* ABOUT US SECTION */
-.fp-tableCell {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    /* border: 3px solid green; */
-}
-
 .names {
     font-family: 'Pinyon Script', cursive;
     font-size: 100px;
     animation-name: spin;
     animation-duration: 5000ms;
      animation-iteration-count: infinite;
-     animation-timing-function: linear; 
+     animation-timing-function: linear;
 
 }
-
+/*
 @keyframes spin {
     from {
         transform:rotate(0deg);
@@ -31,24 +24,26 @@ body {
     to {
         transform:rotate(360deg);
     }
-}
+} */
 
 .intro-us-container {
     text-align: center;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 2%;
 }
 
 .us-pic {
     height: 500px;
     border-radius: 50%;
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .intro-text-container {
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     width: 800px;
     margin: 0 auto;
 }
