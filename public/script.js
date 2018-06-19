@@ -2,7 +2,6 @@ $(document).ready(function() {
     $('#fullpage').fullpage();
 });
 
-
 var projects = document.getElementsByClassName("project");
 var dots = document.getElementsByClassName("dot");
 var isTransitioning = false;
@@ -57,3 +56,14 @@ dots.forEach(function(dot, i) {
         moveProjects();
     });
 });
+
+//FORM SECTION
+
+//
+// input.on('click', function(e) {
+//     e.preventDefault();
+//     const input = $('input[name="name"]'.val());
+//
+//     console.log(input);
+// }
+
