@@ -1,3 +1,19 @@
+/* CONTACT */
+#loretta-contact-container {
+    margin-top: 200px;
+}
+
+.contact-icons {
+    width: 50px;
+}
+
+/* LORETTA'S PROJECTS */
+
+#loretta-projects {
+    border: 3px solid green;
+    padding-top: 200px;
+}
+
 /* TECH STACK */
 
 .tech-stack {
@@ -10,16 +26,9 @@
 
 .tech-icons {
     width: 100px;
-    padding-bottom: 25px;
+    padding-bottom: 20%;
 }
 
 .heroku {
-    width: 75px;
-}
-
-/* LORETTA'S PROJECTS */
-
-#loretta-projects {
-    border: 3px solid green;
-    padding-top: 200px;
+    width: 95px;
 }
