@@ -13,11 +13,19 @@
         </div>
 
     </div>
-    <div class="section" id="contact-info">Contact us!
-        <form class="form">
-            <input type="text" name="name" placeholder="Full Name">
-            <input type="text" name="Subject" placeholder="Subject">
-            <textarea name="comments" placeholder="Comments goes here."></textarea>
+    <div class="section" id="contact-info">
+        {{error}}
+        <form class="form" action='/send-form' method='post'>
+            <input type="text" name="name" class='name' placeholder="Full Name">
+            <input type="text" name="senderEmail" class='sender-email' placeholder="Sender Email Address">
+
+
+            <!-- <select name="recipient-email" class="recipient-email">
+                <option value="Laura's Email">laurie.schneider@gmail.com</option>
+                <option value="Loretta's Email">lorettalevin4@gmail.com</option>
+            </select> -->
+            <input type="text" name="subject" class='subject' placeholder="Subject">
+            <textarea name="comments" class="comments" placeholder="Enter your message."></textarea>
             <button>Submit</button>
 
 
