@@ -56,13 +56,3 @@ dots.forEach(function(dot, i) {
         moveProjects();
     });
 });
-
-//FORM SECTION
-
-//
-// input.on('click', function(e) {
-//     e.preventDefault();
-//     const input = $('input[name="name"]'.val());
-//
-//     console.log(input);
-// }
