@@ -15,40 +15,14 @@ body {
     animation-duration: 5000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    background: -webkit-linear-gradient(
-        330deg,
-        #ee7752,
-        #e73c7e,
-        #bfeff6,
-        #f1c0eb,
-        #fb6b3f,
-        #ff0efd
-    );
-    background: -o-linear-gradient(
-        330deg,
-        #ee7752,
-        #e73c7e,
-        #bfeff6,
-        #f1c0eb,
-        #fb6b3f,
-        #ff0efd
-    );
-    background: linear-gradient(
-        120deg,
-        #ee7752,
-        #e73c7e,
-        #bfeff6,
-        #f1c0eb,
-        #fb6b3f,
-        #ff0efd
-    );
+    background: linear-gradient( 120deg, #ee52e2, #823ce770, #bfeff6, #f1c0eb, #3ffbae, #ff0efd);
     background-size: 400% 400%;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     font-weight: bold;
-    animation: Gradient 11s ease infinite;
-    letter-spacing: 0px;
+    animation: Gradient 5s ease infinite;
+    width: 100%;
 }
 
 @-webkit-keyframes Gradient {
@@ -98,6 +72,7 @@ body {
 }
 
 /* CONTACT US SECTION */
+
 .form {
     border: 2px solid purple;
     display: flex;
@@ -120,6 +95,7 @@ input {
     width: 300px;
     margin-bottom: 25px;
 }
+
 textarea {
     height: 150px;
     width: 600px;
@@ -140,16 +116,9 @@ button {
 }
 
 button:hover {
-    background: -webkit-linear-gradient(
-        330deg,
-        #ee7752,
-        #e73c7e,
-        #bfeff6,
-        #f1c0eb,
-        #fb6b3f,
-        #ff0efd
-    );
+    background: -webkit-linear-gradient( 330deg, #ee7752, #e73c7e, #bfeff6, #f1c0eb, #fb6b3f, #ff0efd);
 }
+
 /* HEADER SECTION */
 
 #header {
