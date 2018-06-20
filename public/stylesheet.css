@@ -73,6 +73,12 @@ body {
 
 /* CONTACT US SECTION */
 
+.error {
+    color: red;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
 .form {
     border: 2px solid purple;
     display: flex;
@@ -81,6 +87,8 @@ body {
     justify-content: center;
     padding-top: 30px;
     background-color: rgb(0, 0, 0);
+    font-family: 'Abel', sans-serif;
+
 }
 
 input, textarea {
@@ -96,6 +104,12 @@ input {
     margin-bottom: 25px;
 }
 
+::placeholder {
+    color: #767171;
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+}
+
 textarea {
     height: 150px;
     width: 600px;
@@ -106,7 +120,7 @@ button {
     height: 40px;
     width: 150px;
     border-radius: 15px;
-    background: rgb(255, 3, 195);
+    background: rgb(183, 170, 180);
     border: 2px solid #00e5ff;
     font-size: 15px;
     color: black;
@@ -116,7 +130,7 @@ button {
 }
 
 button:hover {
-    background: -webkit-linear-gradient( 330deg, #ee7752, #e73c7e, #bfeff6, #f1c0eb, #fb6b3f, #ff0efd);
+    background: rgb(86, 81, 92);
 }
 
 /* HEADER SECTION */

@@ -8,8 +8,103 @@ body {
     /* background-color: black; */
 }
 
-.laura {
-    margin-top: 200px;
-    font-size: 100px;
-    color: rgb(227, 51, 249);
+/* LAURA'S PROJECTS */
+img {
+    object-fit: cover;
+}
+
+
+/* NAME  */
+@import url(https://fonts.googleapis.com/css?family=Lato:900);
+*, *:before, *:after{
+  box-sizing:border-box;
+}
+body{
+  font-family: 'Lato', sans-serif;
+    ;
+}
+div.laura{
+  width: 90%;
+/* margin: 0 auto; */
+  margin: 100px auto 0;        text-align: center;
+  height: 200px;
+}
+.letter{
+  display: inline-block;
+  font-weight: 900;
+  font-size: 8em;
+  margin: 0.2em;
+  position: relative;
+  color: #cc00ff;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+}
+.letter:before, .letter:after{
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+.letter, .letter:before, .letter:after{
+  transition: all 0.5s ease-in-out;
+}
+.letter:before{
+  color: #00ad9d;
+  text-shadow:
+    -1px 0px 1px rgba(255,255,255,.8),
+    1px 0px 1px rgba(0,0,0,.8);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+.letter:after{
+  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.letter:hover:before{
+  color: #fafafa;
+  transform:
+    rotateX(0deg)
+    rotateY(-40deg)
+    rotateZ(0deg);
+}
+.letter:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
+}
+
+
+/* LET'S CONNECT */
+.contact-info {
+    display: flex;
+    background-color: #89b9ec;
+}
+
+.connect {
+    font-size: 48px;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.laura-contact-icons {
+    display: flex;
+    width: 49%;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+    margin-left: 122px;
+    padding-top: 5px;
 }
