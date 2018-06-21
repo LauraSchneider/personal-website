@@ -15,7 +15,7 @@ body {
     animation-duration: 5000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    background: linear-gradient( 120deg, #ee52e2, #823ce770, #bfeff6, #f1c0eb, #3ffbae, #ff0efd);
+    background: linear-gradient(120deg, #594ad2, #d43b9eb8, #7adcea, #f1c0eb, #f7d940ad, #ff0ef8c2);
     background-size: 400% 400%;
     color: transparent;
     -webkit-background-clip: text;

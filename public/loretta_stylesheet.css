@@ -76,11 +76,11 @@ div.loretta {
     display: inline-block;
 }
 
-/* .contact-icons-container {
+.contact-icons-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-} */
+}
 
 .contact-icons {
     width: 65px;
