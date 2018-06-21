@@ -1,5 +1,12 @@
 $(document).ready(function() {
     $('#fullpage').fullpage();
+    $('#contact-button').click(function() {
+        $('html, body').animate({
+            scrollTop: $(document).height()
+        }, 'slow');
+        return false;
+    });
+
 });
 
 var projects = document.getElementsByClassName("project");
@@ -16,7 +23,7 @@ function moveProjects() {
 
     setDot();
 
-    curProject= onDeck;
+    curProject = onDeck;
     onDeck += 1;
 
     if (onDeck >= projects.length) {
