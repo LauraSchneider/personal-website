@@ -12,6 +12,51 @@ body {
 img {
     object-fit: cover;
 }
+/* NAME OTHER */
+/* .backdrop {
+	background-size: contain;
+	background-position: center;
+	margin: auto;
+	margin-top: 100px;
+	width: 75vw;
+} */
+
+.backdrop {
+	/* background-image: url("https://images.freeimages.com/images/large-previews/cb5/floral-pattern-1164178.jpg"); */
+	/* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWs53LeVqPQkGzPL8J4WcVwWDMhP6xVTzQzjdlag3HchqjHnFC"); */
+}
+
+.laura-other:hover::before {
+	/* display: inline-block;
+    content: "✈︎"; */
+}
+/*
+.contact-info:hover {
+    border-radius: 50%;
+}
+.laura-other {
+   color: white;
+   border: 4px white solid;
+   mix-blend-mode: multiply;
+   font: bolder 12vw monospace;
+   text-align: center;
+   margin: 0;
+   cursor: pointer;
+   transition: text-indent 0.5s;
+}
+
+.laura-other:hover {
+	text-indent: 5px;
+	transition: text-indent 0.5s;
+}
+
+.laura-other {
+	font-family: "Bungee Shade", cursive;
+	background-color: rgba(2, 22, 48, 1);
+	outline: 4px rgba(2, 22, 48, 1) solid;
+	font-size: 10vw;
+} */
+
 
 
 /* NAME  */
@@ -25,8 +70,8 @@ body{
 }
 div.laura{
   width: 90%;
-/* margin: 0 auto; */
-  margin: 100px auto 0;        text-align: center;
+  margin: 100px auto 0;
+  text-align: center;
   height: 200px;
 }
 .letter{
