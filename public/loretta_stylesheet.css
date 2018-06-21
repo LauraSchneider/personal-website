@@ -1,25 +1,94 @@
 /* CONTACT */
 
-#loretta-contact-container {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
+.loretta-bio {
+    width: 420px;
 }
 
-#loretta-title {
+.name-container {
+    height: 600px;
+}
+
+div.loretta {
+    width: 90%;
+    margin: 100px auto 0;
+    text-align: center;
+    height: 200px;
+}
+
+.loretta-letter {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 8em;
+    margin: 0.2em;
+    position: relative;
+    color: darkgray;
+    transform-style: preserve-3d;
+    perspective: 400;
+    z-index: 1;
+}
+
+.loretta-letter:before, .loretta-letter:after {
+    position: absolute;
+    content: attr(data-letter);
+    transform-origin: top left;
+    top: 0;
+    left: 0;
+}
+
+.loretta-letter, .loretta-letter:before, .loretta-letter:after {
+    transition: all 0.5s ease-in-out;
+}
+
+.loretta-letter:before {
+    color: #8c1b1b;
+    text-shadow: -1px 0px 1px rgba(255, 255, 255, .8), 1px 0px 1px rgba(0, 0, 0, .8);
+    z-index: 3;
+    transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+}
+
+.loretta-letter:after {
+    color: rgba(0, 0, 0, .11);
+    z-index: 2;
+    transform: scale(1.08, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 1deg);
+}
+
+.loretta-letter:hover:before {
+    color: black;
+    transform: rotateX(0deg) rotateY(-40deg) rotateZ(0deg);
+}
+
+.loretta-letter:hover:after {
+    transform: scale(1.08, 1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg, 22deg);
+}
+
+#last-name {
+    font-size: 13px;
+}
+
+/* #loretta-bio-container {
     display: flex;
     justify-content: center;
-    font-size: 115px;
+} */
+
+#loretta-bio-pic {
+    width: 400px;
+    border-radius: 50%;
 }
 
-.contact-icons-container {
+.selfie, .loretta-bio, .contact-icons-container {
+    display: inline-block;
+}
+
+/* .contact-icons-container {
     display: flex;
     flex-direction: column;
-}
+    justify-content: space-between;
+} */
 
 .contact-icons {
-    width: 50px;
+    width: 75px;
     padding: 10px;
+    display: block;
 }
 
 /* LORETTA'S PROJECTS */
