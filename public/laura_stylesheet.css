@@ -4,77 +4,34 @@
     transform: scale(1.3);
 }
 
-body {
-    /* background-color: black; */
-}
+/* ABOUT ME - LAURA*/
 
-/* LAURA'S PROJECTS */
-img {
-    object-fit: cover;
-}
-/* NAME OTHER */
-/* .backdrop {
-	background-size: contain;
-	background-position: center;
-	margin: auto;
-	margin-top: 100px;
-	width: 75vw;
-} */
-
-.backdrop {
-	/* background-image: url("https://images.freeimages.com/images/large-previews/cb5/floral-pattern-1164178.jpg"); */
-	/* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWs53LeVqPQkGzPL8J4WcVwWDMhP6xVTzQzjdlag3HchqjHnFC"); */
-}
-
-.laura-other:hover::before {
-	/* display: inline-block;
-    content: "✈︎"; */
-}
-/*
-.contact-info:hover {
-    border-radius: 50%;
-}
-.laura-other {
-   color: white;
-   border: 4px white solid;
-   mix-blend-mode: multiply;
-   font: bolder 12vw monospace;
-   text-align: center;
-   margin: 0;
-   cursor: pointer;
-   transition: text-indent 0.5s;
-}
-
-.laura-other:hover {
-	text-indent: 5px;
-	transition: text-indent 0.5s;
-}
-
-.laura-other {
-	font-family: "Bungee Shade", cursive;
-	background-color: rgba(2, 22, 48, 1);
-	outline: 4px rgba(2, 22, 48, 1) solid;
-	font-size: 10vw;
-} */
-
-
-#laura-contact-container {
-    border: 2px solid red;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: 100px 100px;
+.about-me-container {
+    border: 5px solid red;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    /* grid-auto-rows: 100px 100px; */
 }
 
 .name-container {
     /* display: flex; */
     /* flex-direction: column; */
     /* align-items: center; */
-    grid-column: 1/7;
+    /* grid-column: 1/4;
     grid-row: 1/2;
-    justify-self: center;
-    /* padding-top: 5%; */
+    justify-self: center; */
+    padding-top: 2%;
+    border:5px solid rgb(33, 182, 88);
+    width: 100%;
 }
 
+.pic-text-container {
+    borde: 1 px solid yellow;
+}
 .laura {
     /* grid-column: 1 /4; */
     /* justify-content: start;
@@ -87,16 +44,16 @@ img {
 }
 
 .galway-container {
-    margin-top: 20%;
+    /* margin-top: 20%; */
     /* border: 1px solid blue; */
     /* text-align: center; */
-    grid-row: 2/3;
-    padding-left: 10%;
-    /* border: 1px solid blue; */
+    /* grid-row: 2/3; */
+    /* padding-left: 10%; */
+    border: 1px solid blue;
 }
 
 .galway {
-    height: 400px;
+    height: 100px;
     border-radius: 30px;
 }
 
@@ -108,36 +65,37 @@ img {
 
 /* NAME  -- font animation created by Bernardo @https://codepen.io/bernardo/pen/ugApF*/
 /* @import url(https://fonts.googleapis.com/css?family=Lato:900); */
-*, *:before, *:after{
+*, *:before, *:after {
   box-sizing:border-box;
 }
-body{
+
+body {
   font-family: 'Lato', sans-serif;
-    ;
 }
 
-.letter{
+.letter {
   display: inline-block;
   font-weight: 900;
-  font-size: 8em;
-  margin: 0;
-  position: relative;
+  font-size: 6em;
+  /* margin: 0; */
+  /* position: relative; */
   color: #cc00ff;
   transform-style: preserve-3d;
   perspective: 400;
   z-index: 1;
 }
-.letter:before, .letter:after{
+
+.letter:before, .letter:after {
   position:absolute;
   content: attr(data-letter);
   transform-origin: top left;
   top:0;
   left:0;
 }
-.letter, .letter:before, .letter:after{
+.letter, .letter:before, .letter:after {
   transition: all 0.5s ease-in-out;
 }
-.letter:before{
+.letter:before {
   color: #00ad9d;
   text-shadow:
     -1px 0px 1px rgba(255,255,255,.8),
@@ -148,7 +106,8 @@ body{
     rotateY(-15deg)
     rotateZ(0deg);
 }
-.letter:after{
+
+.letter:after {
   color: rgba(0,0,0,.11);
   z-index:2;
   transform:
@@ -158,14 +117,16 @@ body{
     rotateZ(0deg)
     skew(0deg,1deg);
 }
-.letter:hover:before{
+
+.letter:hover:before {
   color: #fafafa;
   transform:
     rotateX(0deg)
     rotateY(-40deg)
     rotateZ(0deg);
 }
-.letter:hover:after{
+
+.letter:hover:after {
   transform:
     scale(1.08,1)
     rotateX(0deg)
@@ -174,11 +135,10 @@ body{
     skew(0deg,22deg);
 }
 
-
 /* LET'S CONNECT */
 .contact-info {
-    display: flex;
-    grid-column: 6/7;
+    /* display: flex; */
+    /* grid-column: 6/7; */
     /* background-color: #89b9ec; */
 }
 
@@ -186,12 +146,14 @@ body{
     font-size: 48px;
     font-family: 'Abel', sans-serif;
     font-weight: bold;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 }
+
 .laura-contact-icons {
-    display: flex;
+    border:1px solid cyan;
+    /* display: flex; */
     /* width: 49%; */
     /* justify-content: space-evenly; */
-    flex-direction: column;
-    justify-content: space-evenly;
+    /* flex-direction: column; */
+    /* justify-content: space-evenly; */
 }
