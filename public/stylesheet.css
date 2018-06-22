@@ -79,7 +79,7 @@ body {
     margin-bottom: 5%;
 }
 
-.error {
+.error, .message {
     color: red;
     font-size: 20px;
     margin-bottom: 20px;
@@ -115,6 +115,16 @@ input {
     font-size: 18px;
 }
 
+select {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 1%;
+    color: #767171;
+    font-size: 18px;
+    font-family: 'Abel', sans-serif;
+    border: 3px solid rgb(60, 132, 208);
+    box-shadow: 2px 1px 10px rgb(3, 249, 255);
+}
 textarea {
     height: 150px;
     width: 600px;
@@ -139,6 +149,12 @@ button:hover {
     background: rgb(86, 81, 92);
 }
 
+/* MODAL SECTION */
+.modal {
+    height: 500px;
+    width: 100%;
+    border: 5px solid red;
+}
 /* HEADER SECTION */
 
 #header {
