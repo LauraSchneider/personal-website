@@ -32,8 +32,10 @@ app.post('/send-form', (req, res) => {
         });
     } else {
         console.log('hello');
+        console.log('req.body', req.body.recipientEmail)
         const msg = {
-            to: 'laurie.schneider@gmail.com',
+
+            to: req.body.recipientEmail,
             from: req.body.senderEmail,
             subject: req.body.subject,
             html:
