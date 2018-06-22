@@ -6,6 +6,14 @@
             <a class="names" title="Loretta's Page" href="/loretta">Loretta</a>
         </div>
     </div>
+
+<!-- <div>
+    {{#if showModal}}
+    {{>showModal}}
+    {{/if}}
+</div> -->
+
+
     <div class="section">
         <div class="intro-text-container">
             <p class="intro-text"><strong>Hey everyone, welcome to our personal website!</strong></p><br>
@@ -19,10 +27,11 @@
             <h1 class="contact-us-header">GET IN TOUCH WITH US!</h1>
             <p class='error'>{{error}}</p>
             <input type="text" name="name" class='name' placeholder="Full Name">
-            <input type="text" name="senderEmail" class='sender-email' placeholder="Sender Email Address">
+            <input type="email" name="senderEmail" class='sender-email' placeholder="Your Email Address">
             <select name="recipientEmail" class="recipient-email">
-                <option value="laurie.schneider@gmail.com">laurie.schneider@gmail.com</option>
-                <option value="Llorettalevin4@gmail.com">lorettalevin4@gmail.com</option>
+                <option value="default">Choose Recipient</option>
+                <option value="laurie.schneider@gmail.com">Laura Schneider</option>
+                <option value="lorettalevin4@gmail.com">Loretta Levin</option>
             </select>
             <input type="text" name="subject" class='subject' placeholder="Subject">
             <textarea name="comments" class="comments" placeholder="Enter your message."></textarea>

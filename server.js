@@ -31,23 +31,28 @@ app.post('/send-form', (req, res) => {
             error: 'Please fill out all fields.'
         });
     } else {
-        console.log('hello');
+        console.log('hello', req.body);
         console.log('req.body', req.body.recipientEmail)
         const msg = {
 
             to: req.body.recipientEmail,
             from: req.body.senderEmail,
             subject: req.body.subject,
-            html:
-            `
+            html: `
             Name: ${req.body.name}<br>
+            Message: ${req.body.comments}
             `
         };
         sgMail.send(msg).then(results => {
-            res.json({success: true});
+            res.render('landing', {
+                success: true,
+                layout: 'main',
+                showModal: true
+            })
+        }).catch(err => {
+            console.log('handle error')
         })
     }
 })
-
 
 app.listen(process.env.PORT || 8080, () => console.log("Listening"));
