@@ -1,5 +1,8 @@
 /* CONTACT */
 
+
+/* NAME --> font animation created by Bernardo @ https://codepen.io/bernardo/pen/ugApF*/
+
 div.loretta {
     width: 90%;
     margin: 100px auto 0;
@@ -168,8 +171,6 @@ div.loretta {
 
 /* TECH STACK */
 
-
-
 .tech-stack-container {
     display: flex;
     flex-direction: column;
@@ -194,4 +195,20 @@ div.loretta {
 .tech-icons {
     width: 65px;
     padding-bottom: 20%;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:959px) {
+    .section {
+        
+    }
+}
+
+@media screen and (max-width:640px) {
+
+}
+
+@media screen and (max-width:320px) {
+
 }
