@@ -47,7 +47,7 @@ app.post('/send-form', (req, res) => {
             res.render('landing', {
                 success: true,
                 layout: 'main',
-                showModal: true
+                showConfirmationModal: true
             })
         }).catch(err => {
             console.log('handle error')
