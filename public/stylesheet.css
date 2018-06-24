@@ -7,7 +7,6 @@ body {
 }
 
 /* ABOUT US SECTION */
-
 .names {
     font-family: 'Pinyon Script', cursive;
     font-size: 100px;
@@ -46,7 +45,6 @@ body {
 }
 
 .us-pic {
-    /* height: 100%; */
     width: 100%;
     border-radius: 50%;
     margin-bottom: 100px;
@@ -54,14 +52,18 @@ body {
 }
 
 .intro-text-container {
-    width: 800px;
     margin: 0 auto;
+    width: 52%;
 }
 
 .intro-text {
     font-family: 'Abel', sans-serif;
     font-size: 25px;
     text-align: center;
+}
+
+.welcome {
+    font-size: 28px;
 }
 
 #sign-off {
@@ -119,7 +121,7 @@ input {
 select {
     width: 300px;
     height: 40px;
-    margin-bottom: 1%;
+    margin-bottom: 25px;
     color: #767171;
     font-size: 18px;
     font-family: 'Abel', sans-serif;
@@ -191,4 +193,87 @@ nav li a {
     text-decoration: none;
     color: white;
     font-family: 'Abel', sans-serif;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .names {
+    /* border: 2px solid red; */
+        font-size: 70px;
+
+    }
+    .name-container {
+        margin-left: 2%;
+    }
+
+    .intro-text-container {
+        /* border: 2px solid red; */
+        margin-top: 8%;
+    }
+
+    .intro-text {
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .names {
+    /* border: 2px solid red; */
+        font-size: 50px;
+        padding-left: 6%;
+        margin-left: -5%;
+
+    }
+
+    .intro-text-container {
+        /* border: 2px solid orange; */
+        margin-top: 8%;
+        width: 90%;
+    }
+
+    .name-container {
+        margin-left: 2%;
+    }
+
+    textarea {
+        width: 300px;
+    }
+
+@media screen and (max-width: 650px) {
+    #header {
+        height: 75px;
+    }
+    .intro-us-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name-container {
+        margin-bottom: -10%;
+        margin-left: 2%;
+        width: 100%;
+    }
+
+    .names {
+        width: 40%;
+        margin-top: -10%;
+    }
+
+    .img-container {
+        width: 50%;
+    }
+
+    .intro-text-container {
+        /* border: 2px solid orange; */
+        margin-top: 8%;
+    }
+
+    .intro-text {
+        font-size: 20px;
+    }
+
+    .welcome, #sign-off, .contact-us-header {
+        font-size: 22px;
+    }
+
 }
