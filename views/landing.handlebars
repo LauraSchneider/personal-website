@@ -1,5 +1,16 @@
 <div id="fullpage">
-    <div class="section" id="about-us">
+    <div class="section row" id="about-us">
+        <div class="col-xs-12 col-sm-4 name-things">
+            <a class="names" title="Laura's Page" href="/laura">Laura</a>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <img class="us-pic" src="/intro_pics/intro_us.jpeg" alt="Laura & Loretta">
+        </div>
+        <div class="col-xs-12 col-sm-4 name-things">
+            <a class="names" title="Loretta's Page" href="/loretta">Loretta</a>
+        </div>
+    </div>
+    <!-- <div class="section" id="about-us">
         <div class="intro-us-container">
             <div class="name-container">
                 <a class="names" title="Laura's Page" href="/laura">Laura</a>
@@ -11,14 +22,7 @@
                 <a class="names" title="Loretta's Page" href="/loretta">Loretta</a>
             </div>
         </div>
-    </div>
-<!-- <div>
-    {{#if showModal}}
-    {{>showModal}}
-    {{/if}}
-</div> -->
-
-
+    </div> -->
     <div class="section">
         <div class="intro-text-container">
             <p class="intro-text"><strong class="welcome">Hey everyone, welcome to our personal website!</strong></p><br>
@@ -42,5 +46,16 @@
             <textarea name="comments" class="comments" placeholder="Enter your message."></textarea>
             <button>Submit</button>
         </form>
+
+        {{#if showConfirmationModal}}
+            <div class="confirmation-modal">
+                <div class="modal-text-container">
+                    <p class="modal-x">X</p>
+                    <p class="modal-text">Your message has been sent.</p>
+                </div>
+            </div>
+        {{/if}}
+
+
     </div>
 </div>
