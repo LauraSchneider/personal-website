@@ -110,7 +110,7 @@ body {
     transform: scale(1.3);
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES*/
 
 @media screen and (max-width: 1250px) {
     .name-container {
@@ -165,17 +165,8 @@ body {
 
 }
 
-@media screen and (max-width: 750px) {
-    .bio {
-        font-size: 20px;
-    }
-}
 
 @media screen and (max-width: 667px) {
-    #header{
-        height:
-    }
-
     .pic-bio-container {
         display: flex;
         flex-direction: column;
@@ -197,8 +188,7 @@ body {
     }
 
     .contact-icons-container {
-        margin-top: 1%;
-        margin-bottom: 1%;
+        margin: 1% 0 1% 0;
     }
 
     .contact-icons {
@@ -207,6 +197,14 @@ body {
     }
 
     .name-container {
+        margin-top: 25%;
+    }
+
+    .project-title {
+        margin-top: 5%;
+    }
+
+    .project {
         margin-top: 25%;
     }
 }

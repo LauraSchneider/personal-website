@@ -77,8 +77,8 @@ div.loretta {
 /* .selfie, .loretta-bio, .contact-icons-container {
     display: inline-block;
 } */
-/*
-.contact-icons-container {
+
+/* .contact-icons-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -93,12 +93,14 @@ div.loretta {
 /* LORETTA'S PROJECTS */
 
 .carousel-container {
-    width: 100%;
-    height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #2f2e2e;
+}
+
+.title-container {
+    margin-top: 3%;
 }
 
 .project-carousel {
@@ -107,7 +109,6 @@ div.loretta {
     width: 75%;
     height: 600px;
     overflow: hidden;
-    margin-top: 20px;
 }
 
 .project-title {
@@ -145,7 +146,7 @@ div.loretta {
 }
 
 .dots-container {
-    margin-top: 1%;
+    margin: 1% 0 1% 0;
 }
 
 .dot {
@@ -189,27 +190,30 @@ div.loretta {
     padding-bottom: 20%;
 }
 
+/* MODAL */
+
+
 .name-things {
     margin-top: 17%;
     text-align: center;
 }
-
 .names {
     padding-left: 15px;
 }
-
 @media screen and (max-width: 1000px) {
     .name-things {
         margin-top: 0;
     }
+
     .us-pic {
         margin: 0 !important
     }
 }
 
+
 /* MEDIA QUERIES */
 
-@media screen and (max-width:1250px) {
+/* @media screen and (max-width:1250px) {
     .dots-container {
         display: none;
     }
@@ -221,4 +225,4 @@ div.loretta {
     }
 }
 
-@media screen and (max-width:320px) {}
+@media screen and (max-width:320px) {} */
