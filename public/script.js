@@ -1,5 +1,8 @@
 $(document).ready(function() {
-    $('#fullpage').fullpage();
+
+    if (screen && screen.width > 991) {
+        $('#fullpage').fullpage();
+    }
     if (location.pathname !== '/loretta' && location.pathname !== '/laura') {
         $('#contact-button').click(function() {
             $('html, body').animate({
@@ -13,7 +16,6 @@ $(document).ready(function() {
 var modal = $(".confirmation-modal");
 var xmodal = $(".modal-x");
 var overlayModal = $(".overlayModal");
-
 
 xmodal.on("click", function(e) {
     console.log("are we here?");
