@@ -48,33 +48,8 @@ nav li a {
 /* ----------------ABOUT US SECTION-------------------*/
 /* SECTION 1 TOP */
 
-/* .name-things {
-    margin-top: 17%;
-    text-align: center;
-} */
-
-/* .names:hover {
-    text-decoration: none;
-    padding-left: 5%;
-    font-family: 'Pinyon Script', cursive;
-    /* font-size: 100px; */
-    /* animation-name: spin;
-    animation-duration: 5000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    background: linear-gradient(120deg, #594ad2, #d43b9eb8, #7adcea, #f1c0eb, #f7d940ad, #ff0ef8c2);
-    background-size: 400% 400%;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-weight: bold;
-    animation: Gradient 5s ease infinite;
-    width: 100%; */
-/* }  */
-
 .names {
-    border: 2px solid green;
-    padding-left: 5%;
+    padding-left: 10%;
     font-family: 'Pinyon Script', cursive;
     font-size: 100px;
     animation-name: spin;
@@ -89,6 +64,7 @@ nav li a {
     font-weight: bold;
     animation: Gradient 5s ease infinite;
     width: 100%;
+    /* border: 2px solid green; */
 }
 
 @-webkit-keyframes Gradient {
@@ -104,26 +80,23 @@ nav li a {
 }
 
 .intro-us-container {
-    text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 2%;
-    border: 1px solid blue;
+    height: 100%;
+    /* border: 1px solid blue; */
 }
 
 .img-container {
-    border: 2px orange solid;
-    height: 500px;
-    width: 500px;
+    width: 35%;
+    /* border: 2px orange solid; */
 }
+
 .us-pic {
-    /* height: 100%; */
     width: 100%;
     border-radius: 50%;
-    margin-bottom: 100px;
-    margin-top: 100px;
-    border: 1px yellow dotted;
+    /* border: 5px yellow dotted; */
 }
 
 /* SECTION 2 MIDDLE --- INTRODUCTION TEXT*/
@@ -279,75 +252,57 @@ button:hover {
 @media screen and (max-width: 1100px) {
     .names {
         /* border: 2px solid red; */
-        font-size: 70px;
+        font-size: 75px;
     }
-    .name-things {
-        margin-top: 10%;
-    }
-    .us-pic {
-        margin: 0 !important
-    }
-    .landing-page-name-container {
-        margin-left: 2%;
-    }
+
     .intro-text-container {
         /* border: 2px solid red; */
         margin-top: 8%;
     }
+
     .intro-text {
         text-align: justify;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .names {
-        border: 2px solid red;
-        font-size: 50px;
-        padding-left: 6%;
-        margin-left: -5%;
-    }
     .intro-text-container {
         border: 2px solid orange;
         margin-top: 8%;
         width: 90%;
     }
-    .landing-page-name-container {
-        margin-left: 2%;
+
+    .names {
+        padding-left: 10%;
     }
+
     textarea {
         width: 300px;
     }
-    .us-pic-container {
-        width: 35%;
+
+@media screen and (max-width: 650px) {
+    #header {
+        height: 81px;
     }
-    @media screen and (max-width: 650px) {
-        #header {
-            height: 81px;
-        }
-        .intro-us-container {
-            display: flex;
-            flex-direction: column;
-        }
-        .landing-page-name-container {
-            margin-bottom: -10%;
-            margin-left: 2%;
-            width: 100%;
-        }
-        .names {
-            width: 40%;
-            margin-top: -10%;
-        }
-        .img-container {
-            width: 50%;
-        }
-        .intro-text-container {
-            /* border: 2px solid orange; */
-            margin-top: 8%;
-        }
-        .intro-text {
-            font-size: 20px;
-        }
-        .welcome, #sign-off, .contact-us-header {
-            font-size: 22px;
+    .intro-us-container {
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid cyan; */
+        justify-content: space-evenly;
+        padding-top: 12%;
+    }
+
+    .img-container {
+    width: 50%;
+    }
+    .intro-text-container {
+        /* border: 2px solid orange; */
+        margin-top: 8%;
+    }
+    .intro-text {
+        font-size: 20px;
+    }
+    .welcome, #sign-off, .contact-us-header {
+    font-size: 22px;
         }
     }

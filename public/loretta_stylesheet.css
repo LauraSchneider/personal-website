@@ -2,7 +2,7 @@
 
 /* NAME --> font animation created by Bernardo @ https://codepen.io/bernardo/pen/ugApF*/
 
-div.loretta {
+/* div.loretta {
     width: 90%;
     margin: 100px auto 0;
     text-align: center;
@@ -72,7 +72,7 @@ div.loretta {
 #loretta-bio-pic {
     width: 350px;
     border-radius: 50%;
-}
+} */
 
 /* .selfie, .loretta-bio, .contact-icons-container {
     display: inline-block;
@@ -193,7 +193,7 @@ div.loretta {
 /* MODAL */
 
 
-.name-things {
+/* .name-things {
     margin-top: 17%;
     text-align: center;
 }
@@ -208,7 +208,7 @@ div.loretta {
     .us-pic {
         margin: 0 !important
     }
-}
+} */
 
 
 /* MEDIA QUERIES */
