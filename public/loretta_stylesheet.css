@@ -74,21 +74,21 @@ div.loretta {
     border-radius: 50%;
 }
 
-.selfie, .loretta-bio, .contact-icons-container {
+/* .selfie, .loretta-bio, .contact-icons-container {
     display: inline-block;
-}
-
+} */
+/*
 .contact-icons-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+} */
 
-.contact-icons {
+/* .contact-icons {
     width: 65px;
     padding: 10px;
     display: block;
-}
+} */
 
 /* LORETTA'S PROJECTS */
 
@@ -189,58 +189,22 @@ div.loretta {
     padding-bottom: 20%;
 }
 
-/* MODAL */
-
-.modal-text-container {
-    border: 5px solid red;
-}
-
-.confirmation-modal {
-    /* background-color: #C4C4C4;
-padding: 32px;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-overflow-y: auto; */
-position: fixed;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   background: rgba(0, 0, 0, .75);
-   overflow-y: auto;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
 .name-things {
     margin-top: 17%;
     text-align: center;
 }
+
 .names {
     padding-left: 15px;
 }
+
 @media screen and (max-width: 1000px) {
     .name-things {
         margin-top: 0;
     }
-
     .us-pic {
         margin: 0 !important
     }
-}
-
-
-
-.overlayModal {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 3;
-    background-color: rgba(0, 0, 0, 0.3);
-    /* display: none; */
 }
 
 /* MEDIA QUERIES */
@@ -258,4 +222,3 @@ position: fixed;
 }
 
 @media screen and (max-width:320px) {}
-
