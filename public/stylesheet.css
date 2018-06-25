@@ -103,6 +103,8 @@ nav li a {
 .intro-text-container {
     width: 800px;
     margin: 0 auto;
+    padding: 0 2%;
+    /* border: 2px solid red; */
 }
 
 .intro-text {
@@ -244,20 +246,19 @@ button:hover {
     position: fixed;
     z-index: 3;
     background-color: rgba(0, 0, 0, 0.3);
-    /* display: none; */
 }
 
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1100px) {
     .names {
-        /* border: 2px solid red; */
         font-size: 75px;
+        /* border: 2px solid red; */
     }
 
     .intro-text-container {
-        /* border: 2px solid red; */
         margin-top: 8%;
+        /* border: 2px solid red; */
     }
 
     .intro-text {
@@ -268,7 +269,7 @@ button:hover {
 @media screen and (max-width: 800px) {
     .intro-text-container {
         border: 2px solid orange;
-        margin-top: 8%;
+        margin-top: 10%;
         width: 90%;
     }
 
