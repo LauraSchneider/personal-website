@@ -1,8 +1,6 @@
-/* CONTACT */
-
 /* NAME --> font animation created by Bernardo @ https://codepen.io/bernardo/pen/ugApF*/
 
-/* div.loretta {
+div.loretta {
     width: 90%;
     margin: 100px auto 0;
     text-align: center;
@@ -52,43 +50,17 @@
 
 .loretta-letter:hover:after {
     transform: scale(1.08, 1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg, 22deg);
-} */
-/*
-#last-name {
-    font-size: 13px;
-} */
-
-/*#loretta-bio-container {
-    display: flex;
-    justify-content: space-around;
-    margin: 3%;
 }
 
-.loretta-bio {
-    width: 35%;
-    text-align: justify;
+.levin {
+    font-size: 5em;
 }
 
-#loretta-bio-pic {
-    width: 350px;
+.loretta-selfie {
+    height: 300px;
     border-radius: 50%;
-} */
+}
 
-/* .selfie, .loretta-bio, .contact-icons-container {
-    display: inline-block;
-} */
-
-/* .contact-icons-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
-
-/* .contact-icons {
-    width: 65px;
-    padding: 10px;
-    display: block;
-} */
 
 /* LORETTA'S PROJECTS */
 

@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    border: 2px solid red;
 }
 
 .name-container {
@@ -126,24 +125,38 @@ body {
         margin-top: 5%;
     }
 
-    .letter {
+    .letter, .loretta-letter {
         font-size: 5em;
+    }
+
+    .levin {
+        font-size: 4em;
     }
 
     .contact-icons-container {
         margin-top: 6%;
     }
 
+    .lor-icons {
+        margin-top: 1%;
+    }
+
     .pic-bio-container {
-        border: 2px solid pink;
         margin-top: 5%;
         align-items: center;
     }
+
+    .lor-bio-pic-container {
+        margin-top: 3%;
+    }
+
     .bio {
         width: 40%;
         font-size: 23px;
-        /* border: 2px solid red; */
+    }
 
+    .lor-bio {
+        width: 43%;
     }
 
     .contact-icons {
@@ -157,8 +170,12 @@ body {
         margin-top: 7%;
     }
 
-    .letter {
+    .letter, .loretta-letter  {
         font-size: 4em;
+    }
+
+    .levin {
+        font-size: 3em;
     }
 
     .bio {
@@ -166,8 +183,9 @@ body {
         font-size: 22px;
     }
 
-    .selfie {
-        height: 300px;
+    .lor-bio {
+        width: 45%;
+        font-size: 21px;
     }
 }
 
@@ -188,6 +206,14 @@ body {
         width: 50%;
     }
 
+    .loretta-letter {
+        font-size: 2em;
+    }
+
+    .levin {
+        font-size: 1em;
+    }
+
     .project-title {
         margin-top: 5%;
     }
@@ -202,8 +228,12 @@ body {
         margin-top: 14%;
     }
 
-    .letter {
+    .letter, .loretta-letter {
         font-size: 3em;
+    }
+
+    .levin {
+        font-size: 2em;
     }
 
     .contact-icons-container {
@@ -212,12 +242,11 @@ body {
 
     .pic-bio-container {
         margin-top: 3%;
-        /* border: 2px solid blue; */
         display: flex;
         flex-direction: column;
     }
 
-    .selfie {
+    .selfie, .loretta-selfie  {
         height: 200px;
     }
 
@@ -225,6 +254,4 @@ body {
         width: 80%;
         margin-top: 4%;
     }
-
-
 }
