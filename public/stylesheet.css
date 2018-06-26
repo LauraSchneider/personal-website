@@ -11,38 +11,52 @@ body {
     height: 50px;
     display: block;
     width: 100%;
-    background-color: black;
+    /* background-color: black; */
     z-index: 9;
     /* text-align: center; */
+    /* border: 2px solid blue; */
     padding: 10px;
 }
 
 nav ul li a:hover {
-    text-decoration: none;
-    color: white;
+    background-color: rgb(183, 170, 180);
+    color: black;
 }
 
 nav ul {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     list-style-type: none;
-    margin: 0;
+    margin: -10px;
     padding: 0;
     overflow: hidden;
+    /* border: 2px solid green; */
     background-color: black;
+    height: 51px;
 }
 
 nav li {
     float: left;
+    /* border: 1px solid yellow; */
+    height: 100%;
 }
 
 nav li a {
     text-transform: uppercase;
-    display: block;
+    /* display: block; */
     font-size: 25px;
     text-decoration: none;
+    /* padding-right: 2%; */
     color: white;
+    /* border: 1px solid red; */
     font-family: 'Abel', sans-serif;
+    height: 100%;
+    display: flex;
+    width: 175px;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
 }
 
 /* ----------------ABOUT US SECTION-------------------*/
