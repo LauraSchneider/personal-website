@@ -190,30 +190,9 @@
     padding-bottom: 20%;
 }
 
-/* MODAL */
-
-
-/* .name-things {
-    margin-top: 17%;
-    text-align: center;
-}
-.names {
-    padding-left: 15px;
-}
-@media screen and (max-width: 1000px) {
-    .name-things {
-        margin-top: 0;
-    }
-
-    .us-pic {
-        margin: 0 !important
-    }
-} */
-
-
 /* MEDIA QUERIES */
 
-/* @media screen and (max-width:1250px) {
+@media screen and (max-width:1250px) {
     .dots-container {
         display: none;
     }
@@ -224,5 +203,3 @@
         height: 38%;
     }
 }
-
-@media screen and (max-width:320px) {} */
