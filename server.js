@@ -2,9 +2,18 @@ const express = require("express");
 const app = express();
 const hb = require("express-handlebars");
 const bodyParser = require('body-parser');
+
+//heroku deployment code
+let apiKey;
+if (process.env.NODE_ENV != 'production') {
+    apiKey = require('./secrets.json').API_Key;
+} else {
+    apiKey = process.env.API_Key;
+}
+
 const sgMail = require('@sendgrid/mail');
-const apiKey = require('./secrets.json').API_Key;
 sgMail.setApiKey(apiKey);
+
 
 app.use(express.static(__dirname + "/public"));
 app.engine("handlebars", hb());
