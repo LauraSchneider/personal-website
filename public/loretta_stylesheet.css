@@ -52,13 +52,13 @@
 
 .loretta-letter:hover:after {
     transform: scale(1.08, 1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg, 22deg);
-}
-
+} */
+/*
 #last-name {
     font-size: 13px;
-}
+} */
 
-#loretta-bio-container {
+/*#loretta-bio-container {
     display: flex;
     justify-content: space-around;
     margin: 3%;
