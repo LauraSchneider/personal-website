@@ -23,6 +23,7 @@
 .pic-bio-container {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     margin-top: 3%;
 }
 
@@ -120,7 +121,7 @@ body {
 
 /* MEDIA QUERIES*/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
     .name-container {
         margin-top: 5%;
     }
@@ -129,13 +130,20 @@ body {
         font-size: 5em;
     }
 
-    .selfie {
-        /* height: 375px; */
+    .contact-icons-container {
+        margin-top: 6%;
     }
 
+    .pic-bio-container {
+        border: 2px solid pink;
+        margin-top: 5%;
+        align-items: center;
+    }
     .bio {
         width: 40%;
         font-size: 23px;
+        /* border: 2px solid red; */
+
     }
 
     .contact-icons {
@@ -144,68 +152,40 @@ body {
     }
 }
 
-/* @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .name-container {
-        margin-top: 10%;
-    }
-
-    .pic-bio-container {
-        margin-bottom: 3%;
+        margin-top: 7%;
     }
 
     .letter {
-        font-size: 3em;
+        font-size: 4em;
     }
 
     .bio {
         width: 40%;
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .selfie {
         height: 300px;
     }
+}
 
-    .contact-icons {
-        height: 35px;
-        width: 35px;
-    }
-
-} */
-
-
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 800px) {
     .pic-bio-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .letter {
-        font-size: 2em;
-    }
-
-    .selfie {
-        height: 125px;
-    }
-
-    .bio {
-        font-size: 15px;
-        width: 65%;
-        margin-bottom: 3%;
+        margin-top: 10%;
     }
 
     .contact-icons-container {
-        margin: 1% 0 1% 0;
-    }
-
-    .contact-icons {
-        height: 30px;
-        width: 30px;
+        margin-top: 8%;
     }
 
     .name-container {
-        margin-top: 25%;
+        margin-top: 12%;
+    }
+
+    .bio {
+        width: 50%;
     }
 
     .project-title {
@@ -215,4 +195,36 @@ body {
     .project {
         margin-top: 25%;
     }
+}
+
+@media screen and (max-width: 650px) {
+    .name-container {
+        margin-top: 14%;
+    }
+
+    .letter {
+        font-size: 3em;
+    }
+
+    .contact-icons-container {
+        margin-top: 3%;
+    }
+
+    .pic-bio-container {
+        margin-top: 3%;
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .selfie {
+        height: 200px;
+    }
+
+    .bio {
+        width: 80%;
+        margin-top: 4%;
+    }
+
+
 }
