@@ -1,11 +1,5 @@
 /* NAME --> font animation created by Bernardo @ https://codepen.io/bernardo/pen/ugApF*/
 
-div.loretta {
-    width: 90%;
-    margin: 100px auto 0;
-    text-align: center;
-}
-
 .loretta-letter {
     display: inline-block;
     font-weight: 900;
@@ -54,6 +48,7 @@ div.loretta {
 
 .levin {
     font-size: 5em;
+    margin-top: 0;
 }
 
 .loretta-selfie {
@@ -61,6 +56,13 @@ div.loretta {
     border-radius: 50%;
 }
 
+.lor-bio-pic-container {
+        margin: 2% 0 2% 0;
+}
+
+.lor-icons-container {
+    margin-top: 1%;
+}
 
 /* LORETTA'S PROJECTS */
 
@@ -80,7 +82,8 @@ div.loretta {
     position: relative;
     margin: 0 auto;
     width: 75%;
-    height: 600px;
+    /* height: 600px; */
+    height: 70%;
     overflow: hidden;
 }
 
@@ -96,6 +99,7 @@ div.loretta {
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     transform: translateX(100%);
 }
 
@@ -150,7 +154,7 @@ div.loretta {
 }
 
 .tech-stack {
-    padding-top: 5%;
+    margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(100px, auto);
@@ -165,14 +169,83 @@ div.loretta {
 
 /* MEDIA QUERIES */
 
-/* @media screen and (max-width:1250px) {
-    .dots-container {
-        display: none;
+@media screen and (max-width:1250px) {
+    .lor-bio {
+        width: 45%;
+        font-size: 21px;
+    }
+    .lor-icons {
+        height: 50px;
+        width: 50px;
     }
 }
 
-@media screen and (max-width:650px) {
-    .project-carousel {
-        height: 38%;
+@media screen and (max-width:1024px) {
+    .loretta-letter {
+        font-size: 5em
     }
-} */
+    .levin {
+        font-size: 4em;
+    }
+    .lor-bio {
+        font-size: 20px;
+    }
+    .loretta-selfie {
+        height: 275px;
+    }
+    .lor-icons {
+        height: 45px;
+        width: 45px;
+    }
+}
+
+@media screen and (max-width:667px) {
+    .loretta-letter {
+        font-size: 4em
+    }
+    .levin {
+        font-size: 3em;
+    }
+    .lor-bio {
+        font-size: 18px;
+        width: 75%;
+    }
+    .lor-bio-pic-container {
+        margin-bottom: 5%;
+    }
+    .lor-icons {
+        height: 40px;
+        width: 40px;
+    }
+    .tech-stack {
+        width: -webkit-fill-available;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .loretta-letter {
+        font-size: 2.75em
+    }
+    .levin {
+        font-size: 1.75em;
+    }
+    .loretta-selfie {
+        height: 200px;
+    }
+    .lor-bio {
+        width: 75%;
+    }
+    .lor-icons {
+        height: 35px;
+        width: 35px;
+    }
+    .lor-icons-container {
+        margin: 3% 0 3% 0;
+    }
+    .tech-icons {
+        padding: 5%;
+    }
+    .tech-stack {
+        width: -webkit-fill-available;
+    }
+}

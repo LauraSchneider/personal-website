@@ -37,7 +37,7 @@ app.post('/send-form', (req, res) => {
     if (!req.body.name || !req.body.subject || !req.body.comments || !req.body.senderEmail) {
         res.render('landing', {
             layout: 'main',
-            error: 'Please fill out all fields.'
+            error: 'Oopsies! Please fill out all fields before submitting.'
         });
     } else {
         console.log('hello', req.body);
