@@ -60,6 +60,7 @@ nav li a {
 }
 
 /* ----------------ABOUT US SECTION-------------------*/
+
 /* SECTION 1 TOP */
 
 .names {
@@ -114,6 +115,7 @@ nav li a {
 }
 
 /* SECTION 2 MIDDLE --- INTRODUCTION TEXT*/
+
 .intro-text-container {
     width: 800px;
     margin: 0 auto;
@@ -125,6 +127,7 @@ nav li a {
     font-family: 'Abel', sans-serif;
     font-size: 25px;
     text-align: center;
+    margin-bottom: 1%;
 }
 
 #sign-off {
@@ -173,6 +176,11 @@ input, textarea {
 input {
     width: 300px;
     margin-bottom: 25px;
+    font-family: 'Abel', sans-serif;
+}
+
+option, textarea {
+    font-family: 'Abel', sans-serif;
 }
 
 ::placeholder {
@@ -220,12 +228,15 @@ button:hover {
 /* MODAL */
 
 .modal-text-container {
-    width: 25%;
-    height: 25%;
+    width: 30%;
+    height: 30%;
+    padding: 2%;
     font-family: 'Abel', sans-serif;
     color: black;
-    background-image: url('tile.jpg');
+    background-image: url(tile.jpg);
     background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .modal-x {
@@ -239,6 +250,7 @@ button:hover {
 .modal-text {
     font-size: 25px;
     text-align: center;
+    margin-top: 10%;
 }
 
 .confirmation-modal {
@@ -254,27 +266,17 @@ button:hover {
     align-items: center;
 }
 
-.overlayModal {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 3;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-
 /* MEDIA QUERIES */
+
 @media screen and (max-width: 1100px) {
     .names {
         font-size: 75px;
         /* border: 2px solid red; */
     }
-
     .intro-text-container {
         margin-top: 8%;
         /* border: 2px solid red; */
     }
-
     .intro-text {
         text-align: justify;
     }
@@ -286,13 +288,20 @@ button:hover {
         width: 90%;
         /* border: 2px solid orange; */
     }
-
     .names {
         padding-left: 10%;
     }
-
     textarea {
         width: 300px;
+    }
+    .modal-text-container {
+        width: 50%;
+        height: 30%;
+    }
+    .modal-text {
+        font-size: 20px;
+        margin-top: 15%;
+        padding: 1%;
     }
 }
 
@@ -300,7 +309,6 @@ button:hover {
     #header {
         height: 81px;
     }
-
     .intro-us-container {
         display: flex;
         flex-direction: column;
@@ -308,22 +316,17 @@ button:hover {
         padding-top: 12%;
         /* border: 2px solid cyan; */
     }
-
     .img-container {
-    width: 50%;
+        width: 50%;
     }
-
     .intro-text-container {
         margin-top: 8%;
         /* border: 2px solid orange; */
     }
-
     .intro-text {
         font-size: 20px;
     }
-
     .welcome, #sign-off, .contact-us-header {
-    font-size: 22px;
-        }
-
+        font-size: 22px;
     }
+}
