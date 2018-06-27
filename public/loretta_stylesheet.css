@@ -68,6 +68,7 @@ div.loretta {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 800px;
     background-color: #2f2e2e;
 }
 
@@ -118,7 +119,7 @@ div.loretta {
 }
 
 .dots-container {
-    margin: 1% 0 1% 0;
+    margin: 2% 0 2% 0;
 }
 
 .dot {
@@ -164,7 +165,7 @@ div.loretta {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width:1250px) {
+/* @media screen and (max-width:1250px) {
     .dots-container {
         display: none;
     }
@@ -174,4 +175,4 @@ div.loretta {
     .project-carousel {
         height: 38%;
     }
-}
+} */
