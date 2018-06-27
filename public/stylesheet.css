@@ -34,6 +34,7 @@ nav ul {
     /* border: 2px solid green; */
     background-color: black;
     height: 51px;
+
 }
 
 nav li {
@@ -53,7 +54,8 @@ nav li a {
     font-family: 'Abel', sans-serif;
     height: 100%;
     display: flex;
-    width: 175px;
+    padding: 0 10px 0 10px;
+    /* width: 175px; */
     align-items: center;
     /* text-align: center; */
     justify-content: center;
@@ -309,11 +311,21 @@ button:hover {
     #header {
         height: 81px;
     }
+
+    nav ul {
+        height: 80px;
+    }
+
+    nav ul a {
+        font-size: 20px;
+        text-align: center;
+    }
     .intro-us-container {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         padding-top: 12%;
+        margin-top: 13%;
         /* border: 2px solid cyan; */
     }
     .img-container {
@@ -326,7 +338,11 @@ button:hover {
     .intro-text {
         font-size: 20px;
     }
-    .welcome, #sign-off, .contact-us-header {
+    .welcome, .contact-us-header {
         font-size: 22px;
+    }
+
+    #sign-off {
+        font-size: 32px;
     }
 }
