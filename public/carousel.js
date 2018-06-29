@@ -28,14 +28,14 @@ function setDot() {
     dots[onDeck].classList.add("current-dot");
 }
 
-timerID = setTimeout(moveProjects, 3000);
+timerID = setTimeout(moveProjects, 2000);
 
 document.addEventListener("transitionend", function(e) {
     if (!e.target.classList.contains("exit")) {
         return;
     }
     e.target.classList.remove("exit");
-    timerID = setTimeout(moveProjects, 3000);
+    timerID = setTimeout(moveProjects, 2000);
     isTransitioning = false;
 });
 

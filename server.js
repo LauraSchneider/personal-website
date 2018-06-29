@@ -19,18 +19,26 @@ app.use(express.static(__dirname + "/public"));
 app.engine("handlebars", hb());
 app.set("view engine", "handlebars");
 
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({
+    extended: false
+}));
 
 app.get('/loretta', (req, res) => {
-    res.render('loretta', {layout: 'main'});
+    res.render('loretta', {
+        layout: 'main'
+    });
 });
 
 app.get('/laura', (req, res) => {
-    res.render('laura', {layout: 'main'});
+    res.render('laura', {
+        layout: 'main'
+    });
 });
 
 app.get('/', (req, res) => {
-    res.render('landing', {layout: 'main'});
+    res.render('landing', {
+        layout: 'main'
+    });
 });
 
 app.post('/send-form', (req, res) => {
@@ -43,7 +51,6 @@ app.post('/send-form', (req, res) => {
         console.log('hello', req.body);
         console.log('req.body', req.body.recipientEmail)
         const msg = {
-
             to: req.body.recipientEmail,
             from: req.body.senderEmail,
             subject: req.body.subject,
