@@ -17,8 +17,13 @@ var modal = $(".confirmation-modal");
 var xmodal = $(".modal-x");
 
 xmodal.on("click", function(e) {
-    console.log("are we here?");
     modal.css({
         display: "none"
     });
 });
+
+$(document).on('click', function(e) {
+    modal.css({
+        display: "none"
+    });
+})
