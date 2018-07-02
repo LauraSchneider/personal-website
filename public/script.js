@@ -16,13 +16,13 @@ $(document).ready(function() {
 var modal = $(".confirmation-modal");
 var xmodal = $(".modal-x");
 
-xmodal.on("click", function(e) {
+xmodal.click(function(e){
     modal.css({
         display: "none"
     });
-});
+})
 
-$(document).on('click', function(e) {
+$(document).click(function(e){
     modal.css({
         display: "none"
     });
