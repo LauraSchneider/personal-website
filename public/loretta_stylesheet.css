@@ -241,6 +241,9 @@
     .tech-stack {
         width: -webkit-fill-available;
     }
+    .personal-page-first-section {
+        margin-top: 75px;
+    }
 }
 
 @media screen and (max-width:350px) {
@@ -255,8 +258,5 @@
     }
     .name-container {
         margin-top: 20%;
-    }
-    .personal-page-first-section {
-        margin-top: 75px;
     }
 }
